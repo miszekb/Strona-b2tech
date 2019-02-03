@@ -1,7 +1,13 @@
+@font-face {
+    font-family: Quicksand;
+    src: url("fonts/Quicksand-Regular.otf") format("opentype");
+}
+
+
 
 .button {
 	display:inline-block;
-    position:relative;
+    position: relative;
     margin:0.4em;  padding:1em;
     cursor:pointer;
     background:#343C99;  color:white; 
@@ -35,13 +41,19 @@
 
 .mainText {
 	font-size: 21px;
-	margin-left: 400px;
-	margin-right:400px;
-	font-family: Helvetica;
+	margin-left: 20%;
+	margin-right: 20%;
+	font-family: Quicksand, sans-serif;
 }
 
 .disclaimer {
 	font-size: 20px;
 	font-family: Helvetica;
 	margin-top: 180px;
+}
+
+.image {
+	margin-top:20px;
+	margin-bottom:20px;
+	margin-left: 24%
 }
