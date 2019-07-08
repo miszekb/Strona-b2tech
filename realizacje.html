@@ -4,9 +4,11 @@
     <meta charset="utf-8">
     <link href="style.css" type="text/css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="photoSlider.js"></script>
 </head>
 <title>b2tech</title>
-<body >
+<body onload="switchSlide();">
     <div class="logo" align="center">
         <img src="logo.PNG" alt="No Image" height="160" width="500">
     </div>
@@ -29,38 +31,13 @@
         </a>
     </div>
 </br>
-<div class="mainText">
+<div class="mainText" align="center">
+<h2>Przykładowe realizacje</h2>
 <br>
-<div class="image"><img src="images/img1.jpg" width="700" height="600" align="center"></div>
-<div class="image"><img src="images/img2.jpg" width="700" height="800" align="center"></div>
-<div class="image"><img src="images/img3.jpg" width="700" height="800" align="center"></div>
-<div class="image"><img src="images/img4.jpg" width="700" height="800" align="center"></div>
-<div class="image"><img src="images/img5.jpg" width="700" height="600" align="center"></div>
-<div class="image"><img src="images/img6.jpg" width="700" height="800" align="center"></div>
-<div class="image"><img src="images/img7.jpg" width="700" height="600" align="center"></div>
-<div class="image"><img src="images/img8.jpg" width="700" height="600" align="center"></div>
-<div class="image"><img src="images/img9.jpg" width="700" height="400" align="center"></div>
-<div class="image"><img src="images/img10.jpg" width="700" height="500" align="center"></div>
-<div class="image"><img src="images/img11.jpg" width="700" height="500" align="center"></div>
-<div class="image"><img src="images/img12.jpg" width="700" height="600" align="center"></div>
-<!--<div class="image"><img src="images/img13.jpg" width="700" height="600" align="center"></div>-->
-<!--<div class="image"><img src="images/img14.jpg" width="700" height="600" align="center"></div>-->
-<div class="image"><img src="images/img15.jpg" width="700" height="500" align="center"></div>
-<div class="image"><img src="images/img16.jpg" width="700" height="600" align="center"></div>
-<!--<div class="image"><img src="images/img17.jpg" width="700" height="600" align="center"></div>-->
-<!--<div class="image"><img src="images/img18.jpg" width="700" height="600" align="center"></div>-->
-<!--<div class="image"><img src="images/img19.jpg" width="700" height="600" align="center"></div>-->
-<div class="image"><img src="images/img20.jpg" width="700" height="600" align="center"></div>
-<!--<div class="image"><img src="images/img21.jpg" width="700" height="600" align="center"></div>-->
-<!--<div class="image"><img src="images/img22.jpg" width="700" height="600" align="center"></div>-->
-<!--<div class="image"><img src="images/img23.jpg" width="700" height="600" align="center"></div>-->
-<div class="image"><img src="images/img24.jpg" width="700" height="600" align="center"></div>
-<div class="image"><img src="images/img25.jpg" width="700" height="500" align="center"></div>
-<div class="image"><img src="images/img26.jpg" width="700" height="800" align="center"></div>
-<div class="image"><img src="images/img27.jpg" width="700" height="800" align="center"></div>
-<div class="image"><img src="images/img28.jpg" width="700" height="600" align="center"></div>
-<div class="image"><img src="images/0.jpg" width="700" height="400" align="center"></div>
-   
+<div id="slider" ></div>
+<br>
+<button id="previousButton" onclick="setSlide(false)">Poprzedni</button>
+<button id="nextButton" onclick="setSlide(true)">Następny</button>
 
 </div>
 </br>
