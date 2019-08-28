@@ -11,8 +11,6 @@
 	cursor: pointer;
 }
 
-
-
 .button {
 	display:inline-block;
     position: relative;
@@ -33,7 +31,7 @@
 	top: 0;  left: 0;  right: 0;  bottom: 0;
 	background: #4551CC;
 	transform: scaleX(0);
-	transform-origin: 0 50%;
+	transform-origin: 5% 5% 5% 5%;
 	transition: transform .3s ease-out;
 }
 

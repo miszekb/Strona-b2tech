@@ -2,13 +2,14 @@
 
 <head>
     <meta charset="utf-8">
+    <link rel="icon" href="favicon.png">
     <link href="style.css" type="text/css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="photoSlider.js"></script>
 </head>
 <title>b2tech</title>
-<body onload="switchSlide();">
+<body onload="init();">
     <div class="logo" align="center">
         <img src="logo.PNG" alt="No Image" height="160" width="500">
     </div>
@@ -18,8 +19,8 @@
             <div class="button" align="center">Strona Główna</div>
         </a>
         <a href="aktualnosci.html">
-                <div class="button" align="center">Aktualności</div>
-            </a>
+            <div class="button" align="center">Aktualności</div>
+        </a>
         <a href="realizacje.html">
             <div class="button" align="center">Realizacje</div>
         </a>
@@ -34,10 +35,11 @@
 <div class="mainText" align="center">
 <h2>Przykładowe realizacje</h2>
 <br>
-<div id="slider" ></div>
-<br>
 <button id="previousButton" onclick="setSlide(false)">Poprzedni</button>
 <button id="nextButton" onclick="setSlide(true)">Następny</button>
+<div id="slider" ></div>
+<br>
+
 
 </div>
 </br>
