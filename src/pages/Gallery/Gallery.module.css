@@ -1,0 +1,15 @@
+.mainHeader {
+    font-size: 30px;
+    font-family: 'Arial';
+    color: rgb(56, 56, 56);
+    letter-spacing: 2px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.galleryContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-around;
+}

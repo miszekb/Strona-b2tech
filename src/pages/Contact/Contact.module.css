@@ -1,0 +1,15 @@
+.mainHeader {
+    font-size: 30px;
+    font-family: 'Arial';
+    color: rgb(56, 56, 56);
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contact {
+    font-size: 20px;
+    font-family: 'Arial';
+    color: rgb(94, 94, 94);
+    text-align: center;
+}

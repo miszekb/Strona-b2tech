@@ -1,0 +1,17 @@
+.offerContainer {
+    color: rgb(75, 75, 75);
+}
+
+.offerContainer li {
+    margin-top: 12px;
+}
+
+.mainHeader {
+    font-size: 30px;
+    margin-top: 180px;
+    margin-bottom: 50px;
+    font-family: 'Arial';
+    color: rgb(56, 56, 56);
+    letter-spacing: 2px;
+    text-align: center;
+}
