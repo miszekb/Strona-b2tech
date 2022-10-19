@@ -1,0 +1,21 @@
+.burgerMenu {
+    width: 70px;
+    margin-top: 50px;
+    margin-right: 90px;
+    cursor:pointer
+}
+
+.burgerMenuBar {
+    background-color: black;
+    margin-top: 12px;
+    padding: 2.5px;
+    display: none;
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 940px) {
+    .burgerMenuBar {
+        display: block;
+        visibility: visible;
+    }
+  }
