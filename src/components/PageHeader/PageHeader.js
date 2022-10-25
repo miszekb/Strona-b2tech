@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-scroll"; 
 import BurgerMenu from "../BurgerMenu/BurgerMenu";
 
 import classes from './PageHeader.module.css';
@@ -22,9 +23,15 @@ const PageHeader = () => {
             </span>
         </div>
         <div className={classes.menuOptionsContainer}>
-            <div className={classes.menuOption}>Oferta</div>
-            <div className={classes.menuOption}>Realizacje</div>
-            <div className={classes.menuOption}>Kontakt</div>
+            <Link to='offer' spy={true} smooth={true} offset={-120} duration={500}>
+                <div className={classes.menuOption}>Oferta</div>
+            </Link>
+            <Link to='gallery' spy={true} smooth={true} offset={-120} duration={500}>
+                <div className={classes.menuOption}>Realizacje</div>
+            </Link>
+            <Link to='contact' spy={true} smooth={true} offset={-120} duration={500}>
+                <div className={classes.menuOption}>Kontakt</div>
+            </Link>
         </div>
         { (windowWidth < WINDOW_WIDTH_FOR_BURGER_MENU) && <BurgerMenu/> }
     </div>

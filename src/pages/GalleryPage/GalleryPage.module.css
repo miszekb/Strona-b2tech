@@ -2,5 +2,16 @@
     display: flex;
     flex-wrap: wrap;
     margin: auto;
+    margin-top: 80px;
     justify-content: space-around;
+}
+
+.mainHeader {
+    margin-top: 170px;
+    font-size: 30px;
+    font-family: 'Arial';
+    color: rgb(56, 56, 56);
+    letter-spacing: 2px;
+    text-align: center;
+    flex-grow: 1;
 }

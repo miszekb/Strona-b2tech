@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 import classes from './Banner.module.css';
 
@@ -9,7 +10,11 @@ const Banner = props => {
             <p className={classes.bannerText}>
                 Kompleksowe remonty i wykańczanie mieszkań
             </p>
-            <button className={classes.bannerButton}>Sprawdź ofertę</button>
+            <Link to='offer' spy={true} smooth={true} offset={-120} duration={500} className={classes.bannerButtonLink}>
+                <button className={classes.bannerButton}>
+                    Sprawdź ofertę
+                </button>
+            </Link>
         </div>
     </div>
 }

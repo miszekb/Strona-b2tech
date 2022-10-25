@@ -5,7 +5,7 @@ import SectionWrapper from '../../components/SectionWrapper/SectionWrapper';
 import classes from './Gallery.module.css';
 
 const Gallery = () => {
-    return <SectionWrapper>
+    return <SectionWrapper id="gallery">
         <h2 className={classes.mainHeader}>Nasze realizacje</h2>
         <div className={classes.galleryContainer}>
             <PictureTile/>

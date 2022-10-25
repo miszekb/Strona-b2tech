@@ -1,4 +1,5 @@
 import React from 'react';
+import { Routes } from 'react-router-dom';
 import Banner from '../../components/Banner/Banner';
 import PageFooter from '../../components/PageFooter/PageFooter';
 import PageHeader from '../../components/PageHeader/PageHeader';
@@ -10,16 +11,14 @@ import Offer from '../Offer/Offer';
 
 const MainPage = () => {
     return <>
-        <PageHeader/>
         <Banner/>
         <Offer/>
         <SectionSeparator/>
         <Gallery/>
         <SectionSeparator/>
         <Contact/>
-        <SectionSeparator/>
-        <GalleryPage/>
-        <PageFooter/>
+        {/* <SectionSeparator/>
+        <GalleryPage/> */}
     </>
 }
 

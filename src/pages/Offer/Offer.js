@@ -5,7 +5,7 @@ import SectionWrapper from "../../components/SectionWrapper/SectionWrapper";
 import classes from './Offer.module.css';
 
 const Offer = props => {
-    return <SectionWrapper>
+    return <SectionWrapper id="offer">
         <h2 className={classes.mainHeader}>Nasza oferta</h2>
         <div className={classes.offerContainer}>
             <h4>KOMPLEKSOWE WYKAŃCZANIE MIESZKAŃ I INNYCH WNĘTRZ W STANIE DEWELOPERSKIM</h4>
