@@ -5,6 +5,7 @@ import PageHeader from '../../components/PageHeader/PageHeader';
 import SectionSeparator from '../../components/SectionSeparator/SectionSeparator';
 import Contact from '../Contact/Contact';
 import Gallery from '../Gallery/Gallery';
+import GalleryPage from '../GalleryPage/GalleryPage';
 import Offer from '../Offer/Offer';
 
 const MainPage = () => {
@@ -16,6 +17,8 @@ const MainPage = () => {
         <Gallery/>
         <SectionSeparator/>
         <Contact/>
+        <SectionSeparator/>
+        <GalleryPage/>
         <PageFooter/>
     </>
 }

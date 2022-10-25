@@ -1,8 +1,8 @@
 .burgerMenu {
-    width: 70px;
     margin-top: 50px;
     margin-right: 90px;
-    cursor:pointer
+    cursor:pointer;
+    width: 0;
 }
 
 .burgerMenuBar {
@@ -17,5 +17,8 @@
     .burgerMenuBar {
         display: block;
         visibility: visible;
+    }
+    .burgerMenu {
+        width: 70px;
     }
   }

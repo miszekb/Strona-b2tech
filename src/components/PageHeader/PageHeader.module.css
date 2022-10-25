@@ -29,6 +29,7 @@
 
 .menuOptionsContainer {
     margin-top: 40px;
+    margin-right: 100px;
     padding-top: 30px;
     padding-bottom: 30px;
     width: 420px;
@@ -43,9 +44,6 @@
     font-weight: 400;
 }
 
-.menuOptionsContainer:hover {
-
-}
 
 @media only screen and (max-width: 940px) {
     .menuOptionsContainer {
