@@ -13,17 +13,18 @@
 
 .modalImageContainer {
     background-color: white;
-    height: 70vh;
+    max-height: 70vh;
     padding: 10px;
     position: fixed;
     margin: auto;
-    margin-top: 10vh;
+    margin-top: 18vh;
     flex: 1;
     cursor: default;
 }
 
 .modalImageContainer img {
-    height: 90%;
+    position: relative;
+    max-height: 65vh;
 }
 
 .modalImageContainer button {
@@ -39,4 +40,15 @@
 
 .modalImageContainer button:hover {
     font-weight: bold;
+}
+
+@media only screen and (max-width: 940px) {
+    .modalImageContainer {
+        width: 80%;
+    }
+
+    .modalImageContainer img {
+        width: 100%;
+        height: auto;
+    }
 }

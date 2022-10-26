@@ -14,7 +14,7 @@ const MainPage = () => {
         <Banner/>
         <Offer/>
         <SectionSeparator/>
-        <Gallery/>
+        <GalleryPage/>
         <SectionSeparator/>
         <Contact/>
         {/* <SectionSeparator/>

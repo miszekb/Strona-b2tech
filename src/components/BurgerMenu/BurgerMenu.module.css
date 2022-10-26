@@ -13,6 +13,40 @@
     visibility: hidden;
 }
 
+.burgerMenuClose {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.burgerMenuItemListContainer {
+    margin-top: 150px;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    z-index: 11;
+    top: 0;
+    left: 0;
+    text-align: center;
+
+}
+
+.burgerMenuItemList {
+    margin: auto;
+}
+
+.burgerMenuItemList .menuOption {
+    margin: auto;
+    font-size: 30px;
+    margin-top: 60px;
+    cursor: pointer;
+}
+
+.burgerMenuItemList .menuOption:hover {
+    font-weight: bold;
+}
+
 @media only screen and (max-width: 940px) {
     .burgerMenuBar {
         display: block;

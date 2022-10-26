@@ -14,10 +14,10 @@ const GalleryPage = () => {
             imagesPaths.push(`./images/${index + 1}.jpg`);
         }
 
-        return imagesPaths.map(imagePath => <PictureTile src={imagePath}/>);
+        return imagesPaths.map(imagePath => <PictureTile key={imagePath} src={imagePath}/>);
     }
 
-    return  <SectionWrapper id="gallery-page">
+    return  <SectionWrapper id="gallery">
             <h2 className={classes.mainHeader}>Dotychczasowe realizacje</h2>
             <div className={classes.galleryContainer}>
                 {renderPhotos()}

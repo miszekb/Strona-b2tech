@@ -12,9 +12,9 @@ const PictureTile = props => {
     const scaleImage = useCallback(() => {
         const image = imageElement.current;
         const { naturalWidth, naturalHeight } = image;
-        const scaledWidth = naturalWidth * (280 / naturalHeight);
+        const scaledWidth = naturalWidth * (140 / naturalHeight);
     
-        setImageWidth(scaledWidth > 420 ? 420 : scaledWidth);
+        setImageWidth(scaledWidth > 140 ? 140 : scaledWidth);
     });
 
     const enableModal = () => setDisplayModal(true)

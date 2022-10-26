@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 import classes from './Banner.module.css';
 
 const Banner = props => {
-    return <div className={classes.bannerContainer}>
+    return <div id='banner' className={classes.bannerContainer}>
         <div className={classes.bannerOverlap}/>
         <div className={classes.bannerImage}>
             <p className={classes.bannerText}>
