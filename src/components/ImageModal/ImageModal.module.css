@@ -1,0 +1,42 @@
+.modalOverlay {
+    z-index: 15;
+    background-color: rgba(0, 0, 0, 0.863);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 999vh;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.modalImageContainer {
+    background-color: white;
+    height: 70vh;
+    padding: 10px;
+    position: fixed;
+    margin: auto;
+    margin-top: 10vh;
+    flex: 1;
+    cursor: default;
+}
+
+.modalImageContainer img {
+    height: 90%;
+}
+
+.modalImageContainer button {
+    width: 50px;
+    background-color: white;
+    border: none;
+    font-size: 30px;
+    padding: 3px;
+    float: right;
+    display: block;
+    cursor: pointer;
+}
+
+.modalImageContainer button:hover {
+    font-weight: bold;
+}

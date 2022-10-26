@@ -1,23 +1,42 @@
-import React from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
+import ImageModal from "../ImageModal/ImageModal";
 
 import classes from './PictureTile.module.css';
 
 const PictureTile = props => {
+    const [ imgWidth, setImageWidth ] = useState(0);
+    const [ displayModal, setDisplayModal ] = useState(false);
 
-    const onImageClick = () => {
+    const imageElement = useRef();
 
-    }
+    const scaleImage = useCallback(() => {
+        const image = imageElement.current;
+        const { naturalWidth, naturalHeight } = image;
+        const scaledWidth = naturalWidth * (280 / naturalHeight);
+    
+        setImageWidth(scaledWidth > 420 ? 420 : scaledWidth);
+    });
 
-    return <div className={classes.pictureTile} on>
-        <div className={classes.imageOverlay}>
-            <span>Wykończenie elewacji</span>
+    const enableModal = () => setDisplayModal(true)
+    const disableModal = () => setDisplayModal(false);
+
+    return <>
+        {displayModal && <ImageModal src={props.src} disableModal={disableModal} title={props.title}/>}
+        <div className={classes.pictureTile} onClick={enableModal}>
+            <div className={classes.imageOverlay}>
+                <span>{props.title}</span>
+            </div>
+            <img
+                alt="Error when loading the resource"
+                onLoad={scaleImage}
+                className={classes.tileImage}
+                src={props.src}
+                ref={imageElement}
+                width={imgWidth}
+            />
         </div>
-        <img
-            className={classes.tileImage}
-            src="https://www.thehousedesigners.com/images/uploads/SiteImage-Landing-house-plans-with-photos-1.webp"
-        />
+    </> 
 
-    </div>
 }
 
 export default PictureTile;

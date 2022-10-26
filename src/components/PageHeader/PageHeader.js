@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 import { Link } from "react-scroll"; 
 import BurgerMenu from "../BurgerMenu/BurgerMenu";
 
@@ -7,7 +8,7 @@ import classes from './PageHeader.module.css';
 const WINDOW_WIDTH_FOR_BURGER_MENU = 940;
 
 const PageHeader = () => {
-    const [ windowWidth, setWindowWidth] = useState(window.innerWidth);
+    const [ windowWidth, setWindowWidth ] = useState(window.innerWidth);
 
     useEffect(() => {
         window.addEventListener('resize', () => {
@@ -16,12 +17,14 @@ const PageHeader = () => {
     }, []);
 
     return <div className={classes.pageHeader}>
-        <div className={classes.pageHeaderTitle}>
-            b2tech
-            <span>
-                <img className={classes.logoIcon} src='./icon.png'/>
-            </span>
-        </div>
+        <NavLink to='/'>
+            <div className={classes.pageHeaderTitle}>
+                b2tech
+                <span>
+                    <img className={classes.logoIcon} src='./icon.png'/>
+                </span>
+            </div>
+        </NavLink>
         <div className={classes.menuOptionsContainer}>
             <Link to='offer' spy={true} smooth={true} offset={-120} duration={500}>
                 <div className={classes.menuOption}>Oferta</div>

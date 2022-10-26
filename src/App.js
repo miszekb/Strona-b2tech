@@ -9,7 +9,7 @@ function App() {
     <PageHeader/>
     <Routes>
       <Route path='/' element={<MainPage/>}/>
-      <Route path='/gallery' element={<GalleryPage/>}/>
+      <Route path='/galeria' element={<GalleryPage/>}/>
     </Routes>;
     <PageFooter/>
   </>
