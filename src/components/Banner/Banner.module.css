@@ -39,7 +39,6 @@
     border: none;
     cursor: pointer;
     padding: 18px;
-    font-family: Arial;
     font-size: 20px;
     letter-spacing: 1px;
     background-color: rgb(156, 138, 105);
@@ -64,5 +63,4 @@
     margin-top: 300px;
     font-size: 30px;
     color: white;
-    font-family: Arial;
 }

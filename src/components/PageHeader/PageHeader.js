@@ -26,7 +26,7 @@ const PageHeader = () => {
         <div className={classes.pageHeader}>
             <NavLink to='/'>
                 <Link to='banner' spy={true} smooth={true} offset={-120} duration={500}>
-                    <div className={classes.pageHeaderTitle}>
+                    <div className={classes.pageHeaderTitle} onClick={isMenuOpened ? toggleBurgerMenu : () => {}}>
                         b2tech
                         <span>
                             <img className={classes.logoIcon} src='./icon.png'/>
