@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.24690bc5.css",
+    "main.js": "/static/js/main.90f14bd3.js",
+    "static/js/787.1bc83c36.chunk.js": "/static/js/787.1bc83c36.chunk.js",
+    "static/media/Nunito-VariableFont_wght.ttf": "/static/media/Nunito-VariableFont_wght.4a3eef3e0a61b7eb3eda.ttf",
+    "static/media/banner.webp": "/static/media/banner.bc5fa490eb973538b445.webp",
+    "index.html": "/index.html",
+    "main.24690bc5.css.map": "/static/css/main.24690bc5.css.map",
+    "main.90f14bd3.js.map": "/static/js/main.90f14bd3.js.map",
+    "787.1bc83c36.chunk.js.map": "/static/js/787.1bc83c36.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.24690bc5.css",
+    "static/js/main.90f14bd3.js"
+  ]
+}

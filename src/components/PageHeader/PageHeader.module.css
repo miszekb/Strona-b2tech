@@ -15,6 +15,7 @@
     padding-left: 50px;
     padding-right: 50px;
     z-index: 13;
+    transition: 0.3s;
 }
 
 .pageHeader a {
@@ -25,6 +26,7 @@
 .pageHeaderTitle {
     font-size: 80px;
     margin-top: 30px;
+    transition: 0.3s;
 }
 
 .logoIcon {
